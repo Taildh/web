@@ -1,6 +1,320 @@
-main {
+header {
+    display: none;
+}
+
+#app {
     height: 100vh;
     width: 100vw;
     background-image: url('/images/bg_PC.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    position: relative;
+}
+
+.download {
+    width: 15vw;
+    position: absolute;
+    right: 30px;
+    top: -10vh;
+}
+
+.download>img {
+    width: 100%;
+}
+
+.row {
+    margin-right: 0 !important;
+}
+
+.top-image {
+    width: 40%;
+}
+
+.auth-form {
+    margin-top: 14px;
+}
+
+.form-wrapper {
+    width: 40vw !important;
+    /* height: 50vh; */
+    background-image: url('/images/khung.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.form-wrapper>.button-form-auth {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 70px;
+}
+
+.form-wrapper>.button-form-auth>img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrapper>.form-content {
+    margin: 0px 40px 0px 40px;
+}
+
+.form-wrapper>.nav-tabs {
+    padding-top: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-wrapper>.tab-content {
+    margin-top: 20px;
+    margin-bottom: 10vh;
+}
+
+.form-wrapper>.form-content>.nav-item {
+    width: 33%;
+}
+
+.form-wrapper>.form-content>.nav-active {
+    width: 66%;
+}
+
+.form-wrapper>.form-content>.nav-item {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.form-wrapper>.form-content>.nav-item>.bg-button {
+    width: 100%;
+    height: 100%;
+}
+
+
+.form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group {
+    position: relative;
+}
+
+.form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-has-icon {
+    padding: 5px 40px;
+    border-radius: 20px;
+    color: rgb(20, 20, 136);
+}
+
+.form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-has-icon::placeholder {
+    color: rgb(20, 20, 136);
+    font-size: 20px;
+}
+
+.form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    left: 10px;
+}
+
+.form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.show-password {
+    left: 92%;
+}
+
+.white-text,
+.btn-ios-download,
+.playweb {
+    display: none;
+}
+
+
+/* footer */
+footer {
+    margin-top: 40px;
+}
+
+footer>.model {
+    position: fixed;
+    bottom: 0;
+    width: 32vw;
+}
+
+footer>.model>img {
+    width: 100%;
+}
+
+.list-game-wrapper {
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/nen_game.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list-game {
+    width: 40% !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.list-game>.item {
+    margin-left: 20px;
+}
+
+.list-game>.item>img {
+    width: 75px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    #app {
+        height: auto;
+        background-image: url('/images/BG_mobile.jpg');
+    }
+
+    header {
+        display: block;
+        height: 50px;
+        background-image: url('/images/header-mb-bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-bottom: 2px solid yellow;
+        position: relative;
+    }
+
+    .messages {
+        position: absolute;
+        width: 9vw;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo {
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -110%;
+    }
+
+    .top-image {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .download {
+        display: none
+    }
+
+    .form-wrapper {
+        width: 80vw !important;
+        /* height: 50vh; */
+        background-image: url('/images/khung.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .form-wrapper>.button-form-auth {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 40px;
+    }
+
+    .form-wrapper>.button-form-auth>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-wrapper>.form-content {
+        margin: 0px 5px 0px 5px;
+    }
+
+    .form-wrapper>.nav-tabs {
+        padding-top: 13px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .form-wrapper>.tab-content {
+        margin-top: 10px;
+    }
+
+    .form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-has-icon {
+        padding: 10px 30px;
+        border-radius: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-has-icon::placeholder {
+        font-size: 10px;
+    }
+
+    .form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        left: 10px;
+    }
+
+    .form-wrapper>.tab-content>.tab-pane>.auth-form>.form-group>.show-password {
+        left: 90%;
+    }
+
+    .form-wrapper>.tab-content {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .gtdnt {
+        display: none;
+    }
+
+    .white-text,
+    .btn-ios-download,
+    .playweb {
+        display: inline;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    footer>.model {
+        position: absolute;
+        bottom: 0;
+        width: 50vw;
+    }
+
+    .list-game-wrapper {
+        display: flex;
+        justify-content: end;
+        background-image: none;
+    }
+
+    .list-game {
+        padding: 20px;
+        width: 50vw !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url('/images/nen_game.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .list-game>.item>img {
+        width: 50px;
+    }
 }
