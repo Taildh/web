@@ -5,7 +5,7 @@ header {
 #app {
     height: 100vh;
     width: 100vw;
-    background-image: url('web/images/bg_PC.jpg');
+    background-image: url('/web/images/bg_PC.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,7 +41,7 @@ main {
 .form-wrapper {
     width: 40vw !important;
     /* height: 50vh; */
-    background-image: url('web/images/khung.png');
+    background-image: url('/web/images/khung.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -147,7 +147,7 @@ footer>.model>img {
 .list-game-wrapper {
     display: flex;
     justify-content: center;
-    background-image: url('web/images/nen_game.png');
+    background-image: url('/web/images/nen_game.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -172,13 +172,13 @@ footer>.model>img {
 @media screen and (max-width: 576px) {
     #app {
         height: auto;
-        background-image: url('web/images/BG_mobile.jpg');
+        background-image: url('/web/images/BG_mobile.jpg');
     }
 
     header {
         display: block;
         height: 50px;
-        background-image: url('web/images/header-mb-bg.png');
+        background-image: url('/web/images/header-mb-bg.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-bottom: 2px solid yellow;
@@ -213,7 +213,7 @@ footer>.model>img {
     .form-wrapper {
         width: 80vw !important;
         /* height: 50vh; */
-        background-image: url('web/images/khung.png');
+        background-image: url('/web/images/khung.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
@@ -308,7 +308,7 @@ footer>.model>img {
         width: 50vw !important;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-image: url('web/images/nen_game.png');
+        background-image: url('/web/images/nen_game.png');
         background-size: cover;
         background-repeat: no-repeat;
 
