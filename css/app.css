@@ -212,7 +212,7 @@ footer>.model>img {
 
     .form-wrapper {
         width: 80vw !important;
-        /* height: 50vh; */
+        height: 50vh;
         background-image: url('/web/images/khung.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
